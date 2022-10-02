@@ -16,8 +16,8 @@ import http from 'http'
  * Get port from environment and store in Express.
  */
 
-//const PORT = normalizePort(process.env.PORT || '3000');
-var PORT = process.env.PORT || 3000
+var PORT = normalizePort(process.env.PORT || '3000');
+
 app.set('port', PORT);
 
 /**
@@ -40,7 +40,7 @@ server.on('listening', onListening);
 
 
 function normalizePort(val) {
-  var port = parseInt(val, 10);
+  var PORT = parseInt(val, 10);
 
   if (isNaN(PORT)) {
     // named pipe
