@@ -8,7 +8,7 @@
 import app from '../app'
 //var debug = require('debug')('rusdigital-backend:server');
 import debug from 'debug'
-debug('rusdigital-backend:server')
+var debug = debug('rusdigital-backend:server')
 import http from 'http'
 //var http = require('http');
 
@@ -17,7 +17,7 @@ import http from 'http'
  */
 
 //const PORT = normalizePort(process.env.PORT || '3000');
-PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000
 app.set('port', PORT);
 
 /**
