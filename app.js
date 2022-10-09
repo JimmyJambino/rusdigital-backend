@@ -44,5 +44,13 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+<<<<<<< HEAD
 // module.exports = app;
 export default app
+=======
+module.exports = app;
+const PORT = process.env.PORT || 3000
+app.listen(PORT, () => {
+  console.log("Running on port:", PORT)
+  })
+>>>>>>> parent of dc56b84 (overwrite mistake?)
