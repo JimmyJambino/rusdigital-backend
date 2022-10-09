@@ -1,18 +1,12 @@
-//var createError = require('http-errors');
-import createError from 'http-errors'
-// var express = require('express');
-import express from 'express'
-// var path = require('path');
-import path from 'path'
-// var cookieParser = require('cookie-parser');
-import cookieParser from 'cookie-parser'
-// var logger = require('morgan');
-import logger from 'morgan'
+var createError = require('http-errors');
+var express = require('express');
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
 
-// var indexRouter = require('./routes/index');
-import indexRouter from './routes/index.js'
-// var usersRouter = require('./routes/users');
-import usersRouter from './routes/users.js'
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
+
 var app = express();
 
 // view engine setup
@@ -44,13 +38,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-<<<<<<< HEAD
-// module.exports = app;
-export default app
-=======
 module.exports = app;
-const PORT = process.env.PORT || 3000
-app.listen(PORT, () => {
-  console.log("Running on port:", PORT)
-  })
->>>>>>> parent of dc56b84 (overwrite mistake?)
